@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    content: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.header {
+    border-bottom: 1px solid rgba(175, 175, 175, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 6rem;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo {
+    justify-self: right;
+    align-self: center;
+    padding-top: 1rem;
+    padding-right: 12rem;
+}
+.logo img {
+    width: 11rem;
+}
+
+
+
+
+.input {
+    align-self: center;
+    justify-self: center;
+}
+.input input {
+    height: 3.2rem;
+    width: 25rem;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0, 0.2);
+    background: rgba(var(--b3f,250,250,250),1);
+}
+.texto-input::placeholder {
+    display: flex;
+    position: relative;
+    left: 9.5rem;
+    top: 0.2rem;
+    justify-content: center;
+    opacity: 0.5;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+.menu-derecha {
+    display: flex;
+    justify-items: left;
+    gap: 1.4rem;
+}
+
+.menu-derecha .flecha {
+    width: 3rem;
+    height: 2.3rem;
+}
+
+.menu-derecha a {
+    align-self: center;
+}
+
+
+.icono {
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+    opacity: 0.8;
+}
+
+.menu-derecha .foto-perfil {
+    border-radius: 50px;
+    border: 1px solid black;
+    opacity: 1;
+    padding: 2px;
+    align-self: center;
+    justify-self: center;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+.main {
+    margin-top: 6rem;
+    background-color: #fafafa;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 30rem;
+
+    justify-content: center;
+
+}
+
+.foto-perfil-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 6rem;
+    padding-left: 3rem;
+    width: 35rem;
+    justify-self: right;
+
+}
+
+.foto-perfil-main img {
+    border-radius: 20rem;
+    width: 17rem;
+}
+
+
+
+
+
+.section2 {
+    display: grid;
+    grid-template-rows: 8rem 8rem 1fr 5rem;
+    width: 99%;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 15rem 10rem 6rem;
+    justify-items: center;
+    align-items: flex-end;
+    width: 31rem;
+}
+
+
+.nombre-usuario {
+    font-size: 3rem;
+    font-weight: lighter;
+    justify-self: center;
+    color: rgb(63, 63, 63);
+
+}
+
+.editar-perfil button {
+
+    border: 1px solid rgba(119, 119, 119, 0.2);
+    border-radius: 5px;
+    background: #0095f6;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+    width: 10rem;
+    height: 3.5rem;
+    padding-top: 3px;
+}
+
+
+.contenido .settings img {
+    width: 3rem;
+    padding-bottom: 0rem;
+    color: #0095f6;
+}
+
+
+
+.cantidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 50rem;
+}
+
+.div-cantidad {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    font-stretch: condensed;
+    color: rgb(82, 82, 82);
+}
+
+.palabras-cantidad {
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+}
+
+
+
+
+
+.descripcion {
+    width: 50rem;
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    align-items: center;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+
+.andres {
+    font-size: 2rem;
+}
+
+.saxofonista {
+    opacity: 0.9;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+
+
+
+
+.siguen {
+
+    display: flex;
+    padding-left: 1.3rem;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.siguen a {
+    text-decoration: none;
+    padding-left: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.siguen .y-mas {
+    color: #8e8e8e;
+
+}
+
+
+
+
+
+
+
+
+
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    gap: 28px;
+    margin-top: 5rem;
+}
+
+.post {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.post-image {
+    margin: 0;
+}
+.post-image img {
+    width: 100%;
+    vertical-align: top;
+}
+.post-overlay {
+    background: rgba(0,0,0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.post:hover .post-overlay {
+    display: flex;
+}
+
+.post-likes,
+.post-comments {
+    font-size: 1.6rem;
+    width: 80px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .post-list {
+        gap: 3px;
+    }
+}
